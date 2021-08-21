@@ -1,0 +1,429 @@
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+body{
+    margin: 0;
+    padding: 0;
+    background: #222;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+  
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px 3%;
+    background: #ffff;
+    /* Set the navbar to fixed position */
+    position: fixed; 
+    /* Position the navbar at the top of the page */
+    top: 0; 
+     /* Full width */
+    width: 100%;
+}
+
+.logo{
+    margin-right: 1440px;
+}
+
+.logo img {
+    height: 48px;
+}
+.logo:hover {
+    transform: translateY(6px);
+}
+  
+.nav__links {
+    list-style: none;
+    display: flex;
+}
+  
+.nav__links a,
+.cta,
+.overlay__content a {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #000000;
+}
+  
+.nav__links li {
+    padding: 0px 30px;
+}
+  
+.nav__links li a {
+    transition: all 0.3s ease 0s;
+    display: flex;
+    justify-content: space-around;
+} 
+
+.nav__links li a:hover {
+    color: #0088a9;
+    border-bottom: 3px solid; 
+}
+  
+.cta {
+    border: 0;
+    background: #222;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    font: inherit;
+    font-size: 18px;
+    padding: 12px 15px;
+    transition: all .1s linear;
+}
+
+/* contact button color */
+.cta:hover {
+    background-color: #75abbc;
+}
+
+/* moves contact button  */
+.cta:active{
+    transform: translateY(5px);
+}
+
+/* Hero Banner computer*/
+.bannerGrid .heroImg{
+    margin-top: 200px;
+    height: 300px;
+}
+
+/* banner text style*/
+.banner-text h1{
+    font-size: 70px;
+    padding-top: 400px;
+}
+
+.banner-text h6{
+    font-size: 30px;
+}
+
+.banner h1, .banner h6 {
+    margin-top: 15px;
+    text-shadow: 4px 4px 6px #75abbc;
+    text-align: center;
+    font-family: 'eurostile', sans-serif;
+    position: relative;
+}
+
+/* moves avatar image */
+.avatar{
+    margin-top: 220px;
+}
+
+
+/* banner text location */
+.banner {
+    color: white;
+    height: 300px;
+    display: flex;
+    align-items: center;
+}
+
+/* align all the banner items */
+
+.bannerGrid{
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Little mario Image */
+.bannerGrid .mario { 
+    height: 90px;
+    position: absolute;
+    top: 520px;
+    left: 0;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+
+    /* part of the mover */
+    -webkit-animation: mover 4s both infinite;
+    animation: mover 2s both infinite,
+}
+
+/* moves mario */
+@keyframes mover { 
+    from { transform: translateX(-200px);}
+    to { transform: translateX(1890px);}
+}
+
+/* for project title text */
+.projectTitle{
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+    font-family: 'eurostile', sans-serif;
+    text-shadow: 4px 4px 6px #75abbc;
+    text-align: center;
+    margin-top: 220px;
+    padding-right: 28px;
+}
+
+/* for tiles of projects */
+:root {
+    --clr-primary: #651fff;
+    --clr-gray: #37474f;
+    --clr-gray-light: #75abbc;
+}
+
+.wrapper-grid {
+    padding-top: 30px;
+    display: flex;
+    grid-template-columns: repeat(20rem);
+    justify-content: space-around;
+}
+  
+.container {
+    overflow: hidden;
+    box-shadow: 0px 2px 8px 0px var(--clr-gray-light);
+    background-color: #75abbc;
+    text-align: center;
+    border-radius: 1rem;
+    position: relative;
+    margin: 0.5rem;
+}
+  
+.banner-img {
+    position: absolute;
+}
+
+.container:hover{
+    transform: translateY(6px);
+}
+
+
+
+/* footer */
+.my-button {
+    font-size: 1em;
+    line-height: normal;
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+    font-weight: 800;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out, color 0.2s 0.3s;
+    letter-spacing: 0;
+    border-radius: 45px;
+    height: auto;
+    padding: .8em 2.1em;
+}
+
+.my-button:hover {
+cursor: pointer;
+padding: .8em 2.7em;
+}
+
+.my-button:active,
+.my-button:focus,
+.my-button.active {
+background-image: none;
+outline: 0;
+-webkit-box-shadow: none;
+      box-shadow: none;
+}
+
+.text-center-h2{
+    margin-bottom: 10px;
+    font-size: 3rem;
+}
+
+
+/*** Footer Call-to-action ***/
+#footer-cta {
+    background-image: url(./images/bgFooter.jpg);
+    background-size: cover;
+	background-color: #ffff;
+	padding: 5em 2em 5.6em;
+    text-align: center;
+    padding-top: 1em;
+    margin-top: 25px;
+    position: relative;
+}
+
+#footer-cta h2 {
+	color: black;
+}
+
+#footer-cta p {
+	color: #000000;
+	font-family: "Maven pro", sans-serif;
+	font-weight: 500;
+	font-size: 1.6em;
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+}
+
+
+#startButtonDiv {
+	margin-top: 2em;
+}
+
+/* borders for buttons */
+#footer-cta a {
+	border: 3px solid #000000;
+	border-radius: 45px;
+	color: #000000;
+}
+
+#footer-cta a:hover {
+	background: #fff;
+	color: #75abbc;
+}
+
+#footer-cta a:hover {
+	border: 3px solid #75abbc;
+	border-radius: 45px;
+}
+
+/*** footer starts ***/
+
+#footer {
+	padding: 5em 30em 2em;
+}
+
+/* LG logo border */
+#footer .logo-footer {
+    height: 48px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#footer #copyright {
+	margin-top: 1.6em;
+	font-family: "Maven pro", sans-serif;
+	font-weight: 500;
+	color: #75abbc;
+    text-align: center;
+}
+
+/* icons adjustments footer */
+
+.fa {
+    font-size: 1.2em;
+    line-height: normal;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out, color 0.2s 0.3s;
+    border-radius: 45px;
+    height: auto;
+    padding: 1.2em 2.1em;
+}
+
+.fa:hover {
+	cursor: pointer;
+}
+
+
+
+
+
+/* Mobile Nav */
+  
+.menu {
+    display: none;
+}
+  
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: #24252a;
+    overflow-x: hidden;
+    transition: all 0.5s ease 0s;
+}
+  
+.overlay--active {
+    width: 100%;
+}
+  
+.overlay__content {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+  
+.overlay a {
+    padding: 15px;
+    font-size: 36px;
+    display: block;
+    transition: all 0.3s ease 0s;
+}
+  
+.overlay a:hover,
+.overlay a:focus {
+  color: #0088a9;
+}
+.overlay .close {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+    color: #edf0f1;
+    cursor: pointer;
+}
+  
+@media screen and (max-height: 450px) {
+    .overlay a {
+      font-size: 20px;
+    }
+    .overlay .close {
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
+    }
+    .container {
+        width: 100%;
+    }
+}
+  
+@media only screen and (max-width: 800px) {
+    .nav__links,
+    .cta {
+      display: none;
+    }
+    .menu {
+      display: initial;
+    }
+
+    .bannerGrid .mario { 
+        height: 90px;
+        position: absolute;
+        top: 527px;
+        left: 0;
+        animation-fill-mode: both;
+        animation-iteration-count: infinite;
+    
+        /* part of the mover */
+        -webkit-animation: mover 3s both infinite;
+        animation: mover 3s both infinite,
+    
+    }
+
+    @keyframes mover { 
+        from { transform: translateX(5px);}
+        to { transform: translateX(370px);}
+    }
+    .logo{
+        margin-right: 230px;
+    }
+
+    .projectTitle {
+        padding: 20px;
+        font-size: 20px;
+      }
+    }
+  
