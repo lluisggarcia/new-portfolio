@@ -112,7 +112,6 @@ header {
     text-shadow: 4px 4px 6px #75abbc;
     text-align: center;
     font-family: 'eurostile', sans-serif;
-    position: relative;
 }
 
 /* moves avatar image */
@@ -187,7 +186,6 @@ header {
     background-color: #75abbc;
     text-align: center;
     border-radius: 1rem;
-    position: relative;
     margin: 0.5rem;
 }
   
@@ -238,7 +236,7 @@ outline: 0;
 
 /*** Footer Call-to-action ***/
 #footer-cta {
-    background-image: url(./images/bgFooter.jpg);
+    background-image: url(./assets/bgFooter.jpg);
     background-size: cover;
 	background-color: #ffff;
 	padding: 5em 2em 5.6em;
