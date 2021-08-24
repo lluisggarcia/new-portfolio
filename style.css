@@ -207,6 +207,7 @@ header {
     margin-top: 100px;
     padding-right: 28px;
     padding-bottom: 15px;
+    cursor: pointer;
 }
 
 
@@ -228,7 +229,6 @@ header {
   
 .btn-group .button {
     background-color: #222;
-    /* Green */
     border-radius: 100px;
     border: none;
     color: white;
@@ -394,8 +394,44 @@ outline: 0;
 	cursor: pointer;
 }
 
+/* for about html page styling  */
 
+.about-me-info {
+    display: flex;
+    justify-content: space-around;
+}
 
+.avatar-about {
+    margin-top: 130px;
+    align-items: center;
+}
+
+.about-me-text {
+    color: #75abbc;
+    font-size: 2rem;
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.about-download > button {
+    align-items: center;
+    font-size: 1em;
+    line-height: normal;
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+    font-weight: 800;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out, color 0.2s 0.3s;
+    letter-spacing: 0;
+    border-radius: 45px;
+    height: auto;
+    padding: .8em 2.1em;
+}
+
+.about-download > button:hover {
+    cursor: pointer;
+    padding: .8em 2.7em;    
+}
 
 
 /* Mobile Nav */
